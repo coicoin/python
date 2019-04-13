@@ -1,0 +1,11 @@
+#!/usr/bin/pythin36
+i=0
+print ('Привет дружок, введи пожалуйста ключевое слово, чтоб забрать свой миллион')
+while i<4:
+    answer = input()
+    if answer == 'orange':
+        print('Success')
+        break
+    else:
+        print('Пожалуйста, попробуй еще раз')
+         i=i+1
