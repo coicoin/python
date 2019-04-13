@@ -1,0 +1,4 @@
+#!/usr/bin/python36
+import os
+user = os.getlogin()
+print('Hello my friend',user,'\n','I am shocked you came back! Nice to see you again!')
