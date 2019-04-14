@@ -1,0 +1,20 @@
+#!/usr/bin/python36
+import sys
+ip=(sys.path.insert(0, '/etc/sysconfig/networl-scripts/ifcfg-ens33'))
+chat_id=0
+bot_id=0
+bot_tpken=0
+def ip_info (path,w):
+    return path
+    
+    
+    
+ 
+ 
+#!/usr/bin/python36
+import sys
+sys.path.insert(0, '/usr/local/bin')
+sys.path.insert(0, '/tmp')
+import module_one
+module_one.ip_info('/tmp/ip_info.txt','w')
+print(module_one.chat_id,'File was made')
