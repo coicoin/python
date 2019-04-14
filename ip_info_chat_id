@@ -1,20 +1,26 @@
+                                                            /usr/local/bin/module_one.py
+
 #!/usr/bin/python36
-import sys
-ip=(sys.path.insert(0, '/etc/sysconfig/networl-scripts/ifcfg-ens33'))
 chat_id=0
 bot_id=0
-bot_tpken=0
-def ip_info (path,w):
-    return path
+bot_token=0
+f = open('/etc/sysconfig/network')
+for line in f.reaflines():
+    def ip_info(fhn,val):
+    fhn.write(line)
     
     
     
  
- 
+                                                                    /root/two.py
 #!/usr/bin/python36
+import os
 import sys
-sys.path.insert(0, '/usr/local/bin')
-sys.path.insert(0, '/tmp')
+#sys.path.insert(0, '/usr/local/bin')
+sys.path.append('/usr/local/bin')
 import module_one
 module_one.ip_info('/tmp/ip_info.txt','w')
-print(module_one.chat_id,'File was made')
+if os.path.isfile('/tmp/ip_info.txt')
+    print(module_one.chat_id,'File was made')
+else:
+    print('File was not created')
